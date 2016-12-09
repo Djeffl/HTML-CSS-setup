@@ -1,0 +1,157 @@
+/*---------------------------Do this first-------------------------------------------------------------------*/
+
+/*Colorcodes:
+-#e1dbdb
+-#fcfafb
+*/
+
+ /*For nav-bar*/
+/*For text*/
+  /*font-family: 'font-awesome' */
+
+/*For headers*/
+/*font-family: 'small font';*/
+
+:root {
+    --black: #000;
+    --beige: #e1dbdb;
+    --gray: #333;
+    --white: #fcfafb;
+    --blue: #37aaff;
+}
+
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+html {
+  background-color: var(--white);
+  color: var(--bg);
+  font-size: 20px;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+ }
+ body {
+   background-color: var(--white);
+   font-family: 'font-awesome', 'Lato', 'Arial', sans-serif;
+ }
+ .spacing {
+   margin-left: 7%;
+   margin-right: 5%;
+ }
+
+
+
+/*--------------------------------------------------------------------------------------------*/
+h1 {
+  margin-top: 0px;
+  /*padding-top: 300px;*/
+  color: var(--white);
+  font-family: "Small Font Regular";
+  font-size: 100px;;
+  letter-spacing: 25px;
+
+}
+h2 {
+  font-family: "Small Font Regular";
+  letter-spacing: 10px;
+  font-size: 35px;
+  color: var(--gray);
+}
+h3 {
+  letter-spacing: 2px;
+  font-size: 30px;
+}
+a {
+  font-size: 26px;
+}
+
+/*for the jquery toggle*/
+span.invisible {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+
+/*----------------------------------------------------------------------------------------*/
+
+.row {
+  max-width: 1140px;
+  /*Center element*/
+  margin: 0 auto 0 auto;
+}
+
+header{
+
+}
+#header-content {
+  height: auto;
+  display: flex;
+  align-items: center;
+  border-bottom: solid 2px transparent; 
+  /*padding-bottom: 2px;*/
+  padding-top: 2px;
+  min-height: 10vh;
+  padding-bottom: 15px;
+  padding-top: 15px;
+   -moz-border-image: -moz-linear-gradient(left, rgba(252,250,251,1) 0%, rgba(252,250,251,1) 3%, rgba(225,219,219,1) 51%, rgba(254,254,254,1) 96%, rgba(254,254,254,1) 100%);
+    -webkit-border-image: -webkit-linear-gradient(left, rgba(252,250,251,1) 0%, rgba(252,250,251,1) 3%, rgba(225,219,219,1) 51%, rgba(254,254,254,1) 96%, rgba(254,254,254,1) 100%);
+    border-image: linear-gradient(to right, rgba(252,250,251,1) 0%, rgba(252,250,251,1) 3%, rgba(225,219,219,1) 51%, rgba(254,254,254,1) 96%, rgba(254,254,254,1) 100%);
+    border-image-slice: 1;
+/*background: rgba(252,250,251,1);
+background: -moz-linear-gradient(left, rgba(252,250,251,1) 0%, rgba(252,250,251,1) 3%, rgba(225,219,219,1) 51%, rgba(254,254,254,1) 96%, rgba(254,254,254,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(252,250,251,1)), color-stop(3%, rgba(252,250,251,1)), color-stop(51%, rgba(225,219,219,1)), color-stop(96%, rgba(254,254,254,1)), color-stop(100%, rgba(254,254,254,1)));
+background: -webkit-linear-gradient(left, rgba(252,250,251,1) 0%, rgba(252,250,251,1) 3%, rgba(225,219,219,1) 51%, rgba(254,254,254,1) 96%, rgba(254,254,254,1) 100%);
+background: -o-linear-gradient(left, rgba(252,250,251,1) 0%, rgba(252,250,251,1) 3%, rgba(225,219,219,1) 51%, rgba(254,254,254,1) 96%, rgba(254,254,254,1) 100%);
+background: -ms-linear-gradient(left, rgba(252,250,251,1) 0%, rgba(252,250,251,1) 3%, rgba(225,219,219,1) 51%, rgba(254,254,254,1) 96%, rgba(254,254,254,1) 100%);
+background: linear-gradient(to right, rgba(252,250,251,1) 0%, rgba(252,250,251,1) 3%, rgba(225,219,219,1) 51%, rgba(254,254,254,1) 96%, rgba(254,254,254,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfafb', endColorstr='#fefefe', GradientType=1 );*/
+}
+header #logo{
+  padding-left: 5em;
+  width: 25em;
+}
+header nav{
+  overflow: visible;
+  width: 75em;
+  text-align: right;
+  /*display: flex;
+  flex-direction: row-reverse;*/
+}
+.menu-item{
+  margin-right: 2em;
+  text-decoration: none;
+  color: #090808;
+}
+.selected{
+  color: var(--blue);
+  text-decoration: none;
+}
+.menu-item:hover{
+  color: var(--blue);
+  text-decoration: none;
+}
+a:focus {
+  text-decoration: none;
+  color:#090808;
+}
+#home {
+  position: relative;
+  background-image: url('img/headerbg-2.jpg');
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+  /*padding-top: 20%;*/
+  /*padding-bottom: 20%;*/
+  /*Media Query Voeg dit toe vanaf 591 x 585*/
+  padding-bottom: 1px;
+  min-height: 90vh;
+
+}
